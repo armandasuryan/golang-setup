@@ -10,6 +10,7 @@ import (
 )
 
 type Imodel interface {
+	ICiClass
 }
 
 type model struct {

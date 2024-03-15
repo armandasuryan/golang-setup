@@ -7,5 +7,5 @@ import (
 )
 
 func SetupRoutes(app *fiber.App, controller controller.Icontroller) {
-
+	app.Get("api/sygap/cmdb/ciclass-list", controller.GetCiClassList)
 }

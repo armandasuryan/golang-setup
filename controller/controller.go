@@ -3,9 +3,12 @@ package controller
 import (
 	"log"
 	"sygap-cmdb/usecase"
+
+	"github.com/gofiber/fiber/v2"
 )
 
 type Icontroller interface {
+	GetCiClassList(ctx *fiber.Ctx) error
 }
 
 type controller struct {
